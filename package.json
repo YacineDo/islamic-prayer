@@ -1,0 +1,38 @@
+{
+  "name": "islamic-prayer",
+  "version": "1.0.0",
+  "description": "Islamic prayer time desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder -mwl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yacineLinux/islamic-prayer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yacineLinux/islamic-prayer/issues"
+  },
+  "homepage": "https://github.com/yacineLinux/islamic-prayer#readme",
+  "devDependencies": {
+    "electron": "^18.2.0",
+    "electron-builder": "^23.0.3"
+  },
+  "build": {
+    "productName": "Islamic Prayer",
+    "artifactName": "Islamci-Prayer-${version}.${ext}",
+    "appId": "yacine.com",
+    "directories": {
+      "app": "./",
+      "output": "./dist",
+      "buildResources": "./build"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
